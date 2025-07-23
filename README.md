@@ -59,25 +59,25 @@ Each table includes primary keys, foreign keys, and appropriate constraints to m
 EXEC GetStudentCountByDepartment 'IT';
 Returns the number of students in a given department.
 
-## 🔍 View
+🔍 View
 StudentCourses
 Shows full student names and their enrolled courses.
 
-## ▶️ How to Use
+▶️ How to Use
 Open SQL Server Management Studio (SSMS)
 
 Run the Database Project.sql script in order
 
 Explore queries, view, and procedure
 
-## 📂 Files
+📂 Files
 Database Project.sql – Complete SQL script
 
 DB_project.pdf – Project instructions and requirements
 
 README.md – Project documentation
 
-## ✅ Requirement Coverage
+✅ Requirement Coverage
 This project fully implements all requirements outlined in the official instructions, including:
 
 Database creation
@@ -92,7 +92,7 @@ Stored procedure
 
 View
 
-## 👤 Author
+👤 Author
 Sara Samy
 Google Data Analytics Track – Digital Egypt Pioneers Initiative
 Initiative: Digital Egypt Pioneers (DEPI)
