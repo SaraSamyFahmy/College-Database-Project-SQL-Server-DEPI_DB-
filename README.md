@@ -1,121 +1,98 @@
 # College-Database-Project-SQL-Server-DEPI_DB-
 This project was developed as part of the Digital Egypt Pioneers Initiative (DEPI) under the Google Data Analytics Track. It demonstrates the design and implementation of a fully relational college database using SQL Server, covering essential concepts like data modeling, query writing, procedures, and views.
 
-📚 Project Overview
-The aim of this project is to simulate a real-world college system, modeling entities such as students, instructors, departments, courses, and topics. The project applies database normalization principles and showcases strong SQL query capabilities.
+---
 
-🏗️ Database Name
-DEPI_DB
+## 📁 Project Structure
 
-🧱 Database Structure
-📌 Tables Created:
-Student
+- **Database**: `DEPI_DB`
+- **Language**: SQL (SQL Server)
+- **Focus**: Relational database design, data manipulation, queries, procedures
 
-Instructor
+---
 
-Department
+## 🧱 Tables
 
-Course
+- `Student`
+- `Instructor`
+- `Department`
+- `Course`
+- `Topics`
+- `Stud_Course`
+- `Ins_Course`
 
-Topics
+Each table includes primary keys, foreign keys, and appropriate constraints to maintain data integrity.
 
-Stud_Course (student-course relationship)
+---
 
-Ins_Course (instructor-course assignment)
+## 📥 Sample Data Inserted
 
-Each table includes proper primary and foreign key constraints to ensure data integrity.
+- Students with departments and supervisors
+- Instructors with salaries and assigned departments
+- Courses linked to topics
+- Student-course grades
+- Instructor-course assignments
 
-📥 Data Inserted
-Includes realistic entries for:
+---
 
-Students and their supervisors
+## 📊 Included SQL Queries
 
-Departments and managers
+- Count of students with known ages
+- Distinct instructor names
+- Students with department names
+- Instructors with or without department
+- Students and courses (where grades exist)
+- Number of courses per topic
+- Instructor salary analysis (min, max, avg)
+- Instructors with salaries below average
+- Department of the instructor with the lowest salary
+- Top 2 highest salaries
+- Using `COALESCE` to handle null salary values
+- Supervisor information for students
 
-Courses linked to topics
+---
 
-Instructor details with degrees and salaries
+## ⚙️ Additional Features
 
-Student enrollments and grades
+### 🛠 Stored Procedure
+```sql
+EXEC GetStudentCountByDepartment 'IT';
+Returns the number of students in a given department.
 
-Instructor course assignments
-
-📊 SQL Queries
-The project includes a rich set of SQL queries such as:
-
-Counting students with age values
-
-Distinct instructor names
-
-Student and department joins
-
-Left joins for instructors and departments
-
-Student-course relationships (with grades)
-
-Aggregated course counts by topic
-
-Instructor salary stats (max, min, avg)
-
-Salaries below average
-
-Department of instructor with min salary
-
-Top 2 instructor salaries
-
-Use of COALESCE to show 'NA' for missing salaries
-
-Supervisor relationships for students
-
-⚙️ Additional Components
-🛠️ Stored Procedure
-GetStudentCountByDepartment
-Returns the number of students in a specific department.
-
-🔍 View
+## 🔍 View
 StudentCourses
-Displays student full names with the courses they are enrolled in.
+Shows full student names and their enrolled courses.
 
-📝 How to Use
-Open SQL Server Management Studio (SSMS).
+## ▶️ How to Use
+Open SQL Server Management Studio (SSMS)
 
-Execute the Database Project.sql script.
+Run the Database Project.sql script in order
 
-It will:
+Explore queries, view, and procedure
 
-Create the database
-
-Build all tables
-
-Populate data
-
-Run queries
-
-Define a stored procedure and a view
-
-📄 Files Included
+## 📂 Files
 Database Project.sql – Complete SQL script
 
-DB_project.pdf – Official project requirements
+DB_project.pdf – Project instructions and requirements
 
 README.md – Project documentation
 
-✅ Requirements Coverage
-All requirements listed in the official project PDF are fully implemented, including:
+## ✅ Requirement Coverage
+This project fully implements all requirements outlined in the official instructions, including:
 
-Table creation with constraints
+Database creation
 
-Data population
+Table setup with constraints
 
-Complex SQL queries
+Data insertion
+
+Complex queries
 
 Stored procedure
 
 View
 
-👤 Author
-Name: Sara Samy
-
-Track: Google Data Analytics
-
+## 👤 Author
+Sara Samy
+Google Data Analytics Track – Digital Egypt Pioneers Initiative
 Initiative: Digital Egypt Pioneers (DEPI)
